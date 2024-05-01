@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body>
+    <div id="root">
+        <div class="content-wrapper px-[5%] py-5 bg-[#f0f7ec] w-full min-h-[100vh] text-base">
+            <header class="flex items-center justify-between">
+                <div class="text-5xl font-bold">
+                    vu.
+                </div>
+                <div class="flex gap-x-3 items-center">
+                    <div class="w-12 h-12 rounded-full overflow-hidden">
+                        <img class="w-full h-full object-cover" src="https://cdn.pixabay.com/photo/2023/10/19/21/08/ai-generated-8327632_1280.jpg" alt="">
+                    </div>
+                    <div class="">
+                        <h2 class="font-bold text-lg">Hoàng Vũ</h2>
+                        <span class="text-sm text-gray-400 italic">11062003</span>
+                    </div>
+                </div>
+            </header>
+            <!-- end header  -->
+            <main class="w-full bg-white p-6 mt-8">
+                <div class="flex justify-between items-center">
+                    <div class="time flex items-center gap-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                          </svg>                          
+                        <div class="flex flex-col">
+                            <span class="text-gray-400 text-sm">Time remaining</span>
+                            <span class="font-bold text-lg">14 : 44 : 00</span>
+                        </div>
+                    </div>
+                    <button class="px-8 py-1 cursor-pointer rounded-lg bg-green-800 text-white">Submit</button>
+                </div>
+                <!-- end time  -->
+                <div class="question my-10 flex max-md:flex-col">
+                    <div class="basis-3/5 max-md:order-2">
+                        <h1>Question 1 of 10</h1>
+                        <span class="max-w-[80%]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, fugit!</span>
+                        <div class="answer">
+                            <ul class="grid mb-8 md:grid-cols-2 mt-8 gap-8 gap-x-3 max-w-[500px]">
+                                <li class="border-2 relative border-gray-300 rounded-lg font-semibold h-[40px] flex items-center justify-center">
+                                    <span class="absolute left-4 top-1/2 -translate-y-1/2 text-green-800 font-bold">A</span>
+                                    Đáp án A
+                                </li>
+                                <li class="border-2 relative border-gray-300 rounded-lg font-semibold h-[40px] flex items-center justify-center">
+                                    <span class="absolute left-4 top-1/2 -translate-y-1/2 text-green-800 font-bold">B</span>
+                                    Đáp án A
+                                </li>
+                                <li class="border-2 relative border-gray-300 rounded-lg font-semibold h-[40px] flex items-center justify-center">
+                                    <span class="absolute left-4 top-1/2 -translate-y-1/2 text-green-800 font-bold">C</span>
+                                    Đáp án A
+                                </li>
+                                <li class="border-2 relative border-gray-300 rounded-lg font-semibold h-[40px] flex items-center justify-center">
+                                    <span class="absolute left-4 top-1/2 -translate-y-1/2 text-green-800 font-bold">D</span>
+                                    Đáp án A
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <div class="basis-2/5 max-md:order-1 flex items-center justify-center max-md:my-20">
+                        <div class="proccess relative w-full h-full">
+                            <svg class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -rotate-90">
+                                <circle class="translate-x-1/2 translate-y-1/2 fill-none stroke-gray-500 stroke-[10px]" r="70"></circle>
+                                <circle class="proccess-item translate-x-1/2 translate-y-1/2 fill-none stroke-gray-500 stroke-[10px]" r="70"></circle>
+                                <span class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-2xl font-semibold">9/10</span>
+                            </svg>
+                           
+                        </div>
+                    </div>
+                </div>
+                <!-- end question  -->
+                <div class="oder flex items-center justify-center">
+                    <button class="py-2 px-3 border-2 border-gray-600 font-semibold" id="pre">Pre</button>
+                    <ul class="list-order flex gap-6 mx-6 w-[620px] flex-nowrap overflow-x-auto overflow-hidden">
+                        <li class="item-order">1</li>
+                        <li class="item-order">2</li>
+                        <li class="item-order">3</li>
+                        <li class="item-order">4</li>
+                        <li class="item-order">5</li>
+                        <li class="item-order">6</li>
+                        <li class="item-order">7</li>
+                        <li class="item-order">8</li>
+                        <li class="item-order">9</li>
+                        <li class="item-order">10</li>
+                        <li class="item-order">10</li>
+                        <li class="item-order">10</li>
+                    </ul>
+                    <button class="py-2 px-3 border-2 border-gray-600 font-semibold" id="next">Next</button>
+                </div>
+                <!-- end order  -->
+            </main>
+        </div>
+    </div>
+</body>
+</html>
